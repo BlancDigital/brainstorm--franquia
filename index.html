@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+
+    <!-- title -->
+    <meta property="og:title" content="Title" />
+
+    <!-- description -->
+    <meta name="description" content="..." />
+    <meta property="og:description" content="..." />
+    <meta name="twitter:description" content="..." />
+
+    <!-- image -->
+    <meta property="og:image" content="http://..." />
+    <meta name="twitter:image" content="http://..." />
+
+    <!-- misc -->
+    <meta property="og:locale" content="pt_BR" />
+    <meta name="theme-color" content="#a52a2a" />
+
+    <link rel="stylesheet" href="style.css" />
+    <!-- G FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./libs/aos/aos.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="css-blurry-gradient"></div>
+    <section class="section-hero | glass">
+      <div class="section-center">
+        <div class="section-hero__text" data-aos="fade-right">
+          <h1>Pronto para alcançar o próximo nível como um empreendedor?</h1>
+          <p>Então cola com a gente!</p>
+          <button class="btn">Cola com a gente</button>
+        </div>
+        <img src="./public/images/logo-branco--no-copy.svg" alt="" />
+      </div>
+    </section>
+
+    <script src="./libs/aos/aos.js" defer></script>
+    <script>
+      /**
+       * Animation on scroll
+       */
+      window.addEventListener("load", () => {
+        AOS.init({
+          duration: 1000,
+          easing: "ease-in-out",
+          once: true,
+          mirror: false,
+        })
+      })
+    </script>
+  </body>
+</html>
