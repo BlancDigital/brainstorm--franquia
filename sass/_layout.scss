@@ -157,6 +157,19 @@
   .text {
     font-size: var(--fs-500);
   }
+
+  .competencias {
+    margin-top: 0.99rem;
+  }
+
+  li {
+    font-weight: 300;
+    list-style: none;
+  }
+
+  li + li {
+    margin-top: 0.33rem;
+  }
 }
 
 // SECTION FOR-YOU
@@ -232,6 +245,11 @@
       img {
         width: 50%;
       }
+    }
+
+    .competencias {
+      display: flex;
+      gap: 0.66rem;
     }
   }
 }
