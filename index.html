@@ -31,24 +31,275 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="preload"
+      href="public/fonts/Intelo-ExtraBold.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="public/fonts/Intelo-Bold.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="public/fonts/Intelo-Regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="public/fonts/Intelo-Light.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
 
     <link rel="stylesheet" href="./libs/aos/aos.css" />
     <title>Document</title>
   </head>
   <body>
-    <div class="css-blurry-gradient"></div>
-    <section class="section-hero | glass">
-      <div class="section-center">
-        <div class="section-hero__text" data-aos="fade-right">
-          <h1>Pronto para alcançar o próximo nível como um empreendedor?</h1>
-          <p>Então cola com a gente!</p>
-          <button class="btn">Cola com a gente</button>
-        </div>
-        <img src="./public/images/logo-branco--no-copy.svg" alt="" />
+    <main>
+      <div class="glass">
+        <!-- SECTION HERO -->
+        <section class="section-hero">
+          <div class="section-center">
+            <div class="section-hero__text" data-aos="fade-right">
+              <h1>
+                Pronto para alcançar o <span class="clr-main">próximo </span
+                ><span class="clr-accent">nível</span> como um empreendedor?
+              </h1>
+              <!-- <p>Então cola com a gente!</p> -->
+              <!-- <button class="btn">Garantir meu curso agora!</button> -->
+            </div>
+            <img
+              class="image"
+              src="./images/logo-branco--no-copy.svg"
+              alt=""
+              data-tilt
+              data-tilt-glare
+              data-tilt-max-glare="2"
+              data-tilt-full-page-listening
+            />
+          </div>
+        </section>
+
+        <!-- SECTION BIG NUMBERS-->
+        <section class="section-big-numbers">
+          <div class="section-center">
+            <h2>
+              A <b>primeira</b> escola de negócios da
+              <span class="clr-main">VIDA</span>
+              <span class="clr-accent">REAL</span>
+            </h2>
+
+            <div class="cards">
+              <!-- start of item -->
+              <div class="cards__card" data-aos="fade-right">
+                <img src="./images/graduated.png" alt="" width="100" height="100" />
+                <div class="cards__card__text">
+                  <p class="title">+400 empreendedores formados</p>
+                  <p class="text">
+                    <b>Somos refêrencia</b> quando se trata de ensinar o DNA do
+                    sucesso aos nossos alunos.
+                  </p>
+                </div>
+              </div>
+              <!-- end of item -->
+              <!-- start of item -->
+              <div class="cards__card" data-aos="fade-up">
+                <img
+                  src="./images/cooperation.png"
+                  alt=""
+                  width="100"
+                  height="100"
+                />
+                <div class="cards__card__text">
+                  <p class="title">
+                    +4200 <span> empregos gerados pelo mundo</span>
+                  </p>
+                  <p class="text">
+                    Atendemos <b>mais de 5 países</b>, transmitindo a ciência do
+                    sucesso para todas as partes do mundo.
+                  </p>
+                </div>
+              </div>
+              <!-- end of item -->
+              <!-- start of item -->
+              <div class="cards__card" data-aos="fade-left">
+                <img src="./images/money.png" alt="" width="100" height="100" />
+                <div class="cards__card__text">
+                  <p class="title">
+                    +60 <span> milhões movimentados no mercado</span>
+                  </p>
+                  <p class="text">
+                    Nós criamos <b>empreendedores de sucesso</b>, que geram
+                    resultados com o que fazem.
+                  </p>
+                </div>
+              </div>
+              <!-- end of item -->
+              <!-- start of item -->
+              <!-- <div class="cards__card" data-aos="fade-left">
+            <img src="./images/hexagon.svg" alt="" width="100" height="100" />
+            <div class="cards__card__text">
+              <p class="title">15 <span> meses pro payback</span></p>
+              <p class="text">
+                É uma média, ok? Mas que o payback vem rápido, ele vem! (só perde pro
+                nosso tempo de entrega )
+              </p>
+            </div>
+          </div> -->
+              <!-- end of item -->
+            </div>
+            <!-- <button class="btn btn--cta">Quero aprender a ciência do sucesso</button> -->
+          </div>
+        </section>
+
+        <!-- SECTION SLIDER -->
+        <section class="section-sliders">
+          <div class="section-center">
+            <h2>
+              Conheça <span class="clr-main">seu</span> futuro
+              <span class="clr-accent">mentor</span>
+            </h2>
+
+            <div class="wrapper">
+              <img src="./images/28039b79-eb03-4758-929f-4f66ded154d0.jpg" alt="" />
+
+              <div class="wrapper__text">
+                <p class="title">Christian Daleck, a mente por trás da Brainstorm</p>
+                <p class="text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
+                  aperiam amet, accusamus porro molestiae quibusdam ad. Sed laborum
+                  nihil nobis veritatis cumque quisquam, repudiandae soluta
+                  dignissimos explicabo temporibus doloremque dolore!
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SECTION DIFERENTIALS -->
+        <section class="section-diferentials">
+          <div class="section-center">
+            <h2>
+              <span class="clr-main">seu</span> futuro
+              <span class="clr-accent">mentor</span>
+            </h2>
+          </div>
+        </section>
+
+        <!-- SECTION FOR YOU -->
+        <section class="section-for-you">
+          <div class="section-center">
+            <h2>
+              O <span class="clr-main">curso</span> BrainstormON é o
+              <span class="clr-accent">ideal para mim</span>?
+            </h2>
+            <div class="item-list">
+              <div class="left">
+                <p class="title">É o curso ideal pra mim se:</p>
+                <ul class="item-list__item-wrapper">
+                  <li>Lorem ipsum dolor, sit amet consectetur adipisicing.</li>
+                  <li>Lorem ipsum dolor, sit amet consectetur adipisicing.</li>
+                  <li>Lorem ipsum dolor, sit amet consectetur adipisicing.</li>
+                  <li>Lorem ipsum dolor, sit amet consectetur adipisicing.</li>
+                  <li>Lorem ipsum dolor, sit amet consectetur adipisicing.</li>
+                </ul>
+              </div>
+              <div class="right">
+                <p class="title">Pau no cu do perdedor</p>
+                <ul class="item-list__item-wrapper">
+                  <li>Lorem ipsum dolor, sit amet consectetur adipisicing.</li>
+                  <li>Lorem ipsum dolor, sit amet consectetur adipisicing.</li>
+                  <li>Lorem ipsum dolor, sit amet consectetur adipisicing.</li>
+                  <li>Lorem ipsum dolor, sit amet consectetur adipisicing.</li>
+                  <li>Lorem ipsum dolor, sit amet consectetur adipisicing.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SECTION TESTIMONIAL -->
+        <section class="section-testimonial">
+          <div class="section-center">
+            <h2>
+              <span class="clr-main">Depoimentos de</span> quem já foram
+              <span class="clr-accent">nossos alunos</span>
+            </h2>
+
+            <div class="splide">
+              <div class="splide__track">
+                <ul class="splide__list">
+                  <li class="splide__slide">
+                    <p class="testimonials__slide__text">
+                      MTOOOOO obrigada pela oportunidade de estar com vocês a
+                      distância. Você é foda!! Me orgulho mto de ter investido em mim
+                      e começado a brainstorm. Vcs estão me transformando e estou
+                      sendo melhor pq estou vendo o caminho através dessa escola
+                      maravilhosaaaaa!!
+                    </p>
+
+                    <p class="name">Luisa de Estefani</p>
+                  </li>
+                  <li class="splide__slide">
+                    <p class="testimonials__slide__text">
+                      Sendo a primeira escola de negócios da vida real, a experiência
+                      que eles trazem, vicência na prática, insights e mentoria para
+                      aplicar o conhecimento adquirido! Realmente são fantásticos e
+                      recomento! Mudança de vida, comportamento e resultados!
+                    </p>
+
+                    <p class="name">Kathelyn Lourenção</p>
+                  </li>
+                  <li class="splide__slide">
+                    <p class="testimonials__slide__text">
+                      Bom diaaaa!!! Bora ser feliz todo dia!!! Foi muito legal ontem,
+                      acho que todos nós conseguimos evoluir e está é a proposta da
+                      escola, nos tirar da zona de conforto e nos fazer acreditar que
+                      somos capazes! Parabéns para todos!! Arrasamos!!!
+                    </p>
+
+                    <p class="name">Mariane Zaqueo</p>
+                  </li>
+                  <li class="splide__slide">
+                    <p class="testimonials__slide__text">
+                      @christiandaleck obrigada! Está me ensinando um caminho que não
+                      conhecia, o empreededorismo, mudou meu mindset, um grande
+                      mestre, tenho certeza que @escoladenegociosbrainstorm será um
+                      sucesso. Meu filho será aluno da @escoladenegociosbrainstorm
+                    </p>
+
+                    <p class="name">Maira Pompeo</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
-    </section>
+
+      <div class="flare flare--1" />
+      <div class="flare flare--2" />
+      <div class="flare flare--3" />
+      <div class="flare flare--4" />
+      <div class="flare flare--6" />
+      <div class="flare flare--7" />
+      <div class="flare flare--8" />
+      <div class="flare flare--9" />
+      <div class="flare flare--10" />
+    </main>
 
     <script src="./libs/aos/aos.js" defer></script>
+    <script src="./libs/vanilla-tilt/vanilla-tilt.min.js" defer></script>
+    <script src="./libs/splide-3.6.4/splide.min.js" defer></script>
     <script>
       /**
        * Animation on scroll
@@ -61,6 +312,13 @@
           mirror: false,
         })
       })
+
+      setTimeout(() => {
+        new Splide(".splide", {
+          perPage: 2,
+          gap: "1.315rem",
+        }).mount()
+      }, 1000)
     </script>
   </body>
 </html>

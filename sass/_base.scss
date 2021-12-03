@@ -7,13 +7,48 @@
   margin: 0;
 }
 
+@font-face {
+  font-family: "Intelo";
+  src: url(../fonts/Intelo-ExtraBold.woff2) format("woff2");
+  font-weight: bolder;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Intelo";
+  src: url(../fonts/Intelo-Bold.woff2) format("woff2");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Intelo";
+  src: url(../fonts/Intelo-Regular.woff2) format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Intelo";
+  src: url(../fonts/Intelo-Light.woff2) format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
-  --clr-accent: #602779;
-  --clr-main: #00a9ab;
+  --clr-accent: #57167d;
+  --clr-accent-200: #a24ec6;
+  --clr-main: #4fc2c1;
+  --clr-main-200: #14fbff;
   --clr-black: #060509;
   --clr-white: #fff;
 
-  --ff-title: "Roboto", sans-serif;
+  --ff-title: "Intelo", sans-serif;
+  --ff-body: "Roboto", sans-serif;
 
   /* Constants for Base font size (fluid) */
   --fs-base: 16px;
@@ -108,6 +143,7 @@ header {
 }
 h5 {
   font-size: var(--fs-500);
+  font-weight: bolder;
   line-height: var(--lh-max);
 }
 
@@ -122,7 +158,7 @@ h3 {
 }
 
 h2 {
-  font-size: var(--fs-800);
+  font-size: var(--fs-900);
   line-height: var(--lh-min);
 }
 
@@ -131,8 +167,13 @@ h1 {
   line-height: var(--lh-min);
 }
 
+p {
+  font-weight: 300;
+}
+
 body {
-  font-family: sans-serif;
+  font-family: var(--ff-body);
+  color: var(--clr-white);
   background-color: var(--clr-black);
   overflow-x: hidden;
 }
@@ -151,7 +192,6 @@ dd {
   margin: 0;
 }
 
-body,
 h1,
 h2,
 h3,
@@ -159,8 +199,18 @@ h4,
 h5,
 h6 {
   font-family: var(--ff-title);
-  line-height: 1.2;
-  color: var(--clr-white);
+}
+
+/* Align sections title to the center and add a default margin-bottom */
+h2 {
+  text-align: center;
+  margin-bottom: 2.6rem;
+}
+
+section {
+  position: relative;
+  z-index: 2; // place the sections above the glass effect
+  padding: 5.2rem 0;
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
@@ -232,8 +282,8 @@ select {
 /* if backdrop support: very transparent and blurred */
 @supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
   .glass {
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
-    background: rgba(255, 255, 255, 0.05);
+    // box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5); needed to remove in order to proper display the sections
+    background: rgba(255, 255, 255, 0);
     backdrop-filter: blur(100px);
   }
 }
@@ -242,4 +292,17 @@ select {
   width: 90%;
   max-width: 1140px;
   margin: 0 auto;
+}
+
+.clr-main {
+  color: #14fbff;
+  text-shadow: -0.1rem -0.1rem 0.5rem var(--clr-main),
+    0.1rem 0.1rem 2rem var(--clr-main), 0 0 1rem var(--clr-main);
+}
+.clr-accent {
+  color: #a24ec6;
+  text-shadow: -0.2rem -0.2rem 1rem var(--clr-accent),
+    0.2rem 0.2rem 1rem var(--clr-accent), 0 0 2rem var(--clr-accent),
+    0 0 4rem var(--clr-accent), 0 0 6rem var(--clr-accent),
+    0 0 8rem var(--clr-accent), 0 0 10rem var(--clr-accent);
 }
