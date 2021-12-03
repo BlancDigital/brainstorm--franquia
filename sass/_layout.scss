@@ -16,6 +16,7 @@
 // }
 
 .flare {
+  display: none;
   content: "";
   position: absolute;
   width: 18.75rem;
@@ -220,6 +221,10 @@
 }
 
 @media screen and (min-width: 48rem) {
+  .flare {
+    display: initial;
+  }
+
   .section-sliders {
     .wrapper {
       flex-direction: row;
