@@ -277,6 +277,10 @@ select {
   .glass {
     background-color: rgba(255, 255, 255, 0.01);
   }
+
+  .flare {
+    display: none;
+  }
 }
 /* if backdrop support: very transparent and blurred */
 @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
@@ -333,7 +337,7 @@ select {
   justify-items: center;
 }
 
-.cards--numbers {
+.cards--diferenciais {
   grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
   gap: 1rem;
 }
@@ -344,6 +348,7 @@ select {
   gap: 1rem;
   align-content: flex-start;
   justify-items: center;
+  text-align: center;
 }
 .cards__card .title {
   margin-bottom: 1.2rem;
@@ -369,6 +374,11 @@ select {
   .cards {
     grid-template-columns: repeat(3, 1fr);
   }
+
+  .cards--diferenciais {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+  }
 }
 .item-list {
   display: flex;
@@ -392,7 +402,7 @@ select {
   width: 1.5em;
   height: 1.5em;
   content: "";
-  background-image: url(./images/icon-cancel.svg);
+  background-image: url(./public/images/icon-cancel.svg);
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -482,10 +492,6 @@ select {
   margin-top: 1.333rem;
 }
 
-.section-big-numbers {
-  text-align: center;
-}
-
 .section-sliders .wrapper {
   display: flex;
   gap: 1.3rem;
@@ -506,7 +512,7 @@ select {
 }
 .section-for-you .left li::before {
   filter: drop-shadow(0px 0px 3.5rem var(--clr-main-200)) saturate(3);
-  background-image: url(./images/icon-check.svg);
+  background-image: url(./public/images/icon-check.svg);
 }
 .section-for-you .right li::before {
   filter: drop-shadow(0px 0px 3.5rem var(--clr-accent-200)) saturate(3);
@@ -517,6 +523,18 @@ select {
 }
 .section-testimonial .splide__list:active {
   cursor: grabbing;
+}
+.section-testimonial .splide__arrows {
+  display: none;
+}
+.section-testimonial .splide__pagination.splide__pagination {
+  bottom: -1.6rem;
+}
+.section-testimonial .splide__pagination__page.splide__pagination__page {
+  background-color: var(--clr-main);
+}
+.section-testimonial .splide__pagination__page.is-active.splide__pagination__page.is-active {
+  background-color: var(--clr-main-200);
 }
 .section-testimonial .testimonials__slide__text {
   font-size: var(--fs-500);
