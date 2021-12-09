@@ -20,9 +20,9 @@
     <meta property="og:title" content="Brainstorm - Escola de Negócios" />
 
     <!-- description -->
-    <meta name="description" content="..." />
-    <meta property="og:description" content="..." />
-    <meta name="twitter:description" content="..." />
+    <meta name="description" content="Você busca ter uma carreira de sucesso? Ser um bom empresário? A Primeira EScola de Negócios pode te ajudar com isso." />
+    <meta property="og:description" content="Você busca ter uma carreira de sucesso? Ser um bom empresário? A Primeira EScola de Negócios pode te ajudar com isso." />
+    <meta name="twitter:description" content="Você busca ter uma carreira de sucesso? Ser um bom empresário? A Primeira EScola de Negócios pode te ajudar com isso." />
 
     <!-- misc -->
     <meta property="og:locale" content="pt_BR" />
