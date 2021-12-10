@@ -246,7 +246,7 @@
                 />
                 <p class="title">Mentoria ao vivo</p>
                 <p class="text">
-                  <b>Os melhores professores</b> te ajudando no que você precisar
+                  <b>Os melhores treinadores</b> te ajudando no que você precisar
                 </p>
               </div>
               <div class="cards__card" data-aos="fade-up">
@@ -258,7 +258,7 @@
                 />
                 <p class="title">Aulas gravadas</p>
                 <p class="text">
-                  Aulas disponíveis 24/7 com
+                  Aulas disponíveis 24h por dia com
                   <b>o melhor conteúdo</b> para <b>te levar ao sucesso.</b>
                 </p>
               </div>
@@ -284,35 +284,37 @@
         <section class="section-for-you">
           <div class="section-center">
             <h2>
-              O <span class="clr-main">curso</span> BrainstormON é o
+              O <span class="clr-main">curso</span> Brainstorm ON é o
               <span class="clr-accent">ideal para mim</span>?
             </h2>
             <div class="item-list">
               <div class="left">
-                <p class="title">É o curso ideal pra mim se:</p>
+                <p class="title">Se você deseja:</p>
                 <ul class="item-list__item-wrapper">
-                  <li>Quero ser uma pessoa de sucesso.</li>
+                  <li>Ser uma pessoa de sucesso.</li>
                   <li>
-                    Desejo aprender uma metodológia ágil que entrega resultados.
+                    Aprender uma metodológia ágil que entrega resultados.
                   </li>
-                  <li>Quero aprender inteligência emocional.</li>
-                  <li>Tenho vontade de mudar para uma vida melhor.</li>
+                  <li>Aprender inteligência emocional.</li>
+                  <li>Ter vontade de mudar para uma vida melhor.</li>
                 </ul>
               </div>
               <div class="right">
-                <p class="title">Não é o curso ideal pra mim se:</p>
+                <p class="title">Se você NÃO deseja:
+
+</p>
                 <ul class="item-list__item-wrapper">
-                  <li>Não quero ser uma pessoa de sucesso.</li>
+                  <li>Querer ser uma pessoa de sucesso.</li>
                   <li>
-                    Não tenho interesse em aprender uma metodologia que ve ajudar no
+                    Aprender uma metodologia que ve ajudar no
                     sucesso.
                   </li>
                   <li>
-                    Não quero aprender a ter inteligência emocional para lidar com
+                    Querer aprender a ter inteligência emocional para lidar com
                     situações dificeis.
                   </li>
                   <li>
-                    Prefiro ficar na minha situação atual, sem alguém para me guiar.
+                    Ter o conhecimento para mudar de vida.
                   </li>
                 </ul>
               </div>
@@ -399,7 +401,7 @@
 
       <div class="modal modal--main-form is-hidden" id="modal">
         <div class="modal__image-wrapper">
-          <img data-src="./public/images/logo-branco.sv" class="lazyload" alt="" />
+          <img data-src="./public/images/logo-branco--no-copy.svg" class="lazyload" alt="" />
         </div>
 
         <form
@@ -485,7 +487,7 @@
       <!-- EXIT FORM -->
       <div class="modal modal--exit-form is-hidden" id="modal">
         <div class="modal__image-wrapper">
-          <img data-src="./public/images/logo-branco.sv" class="lazyload" alt="" />
+          <img data-src="./public/images/logo-branco--no-copy.svg" class="lazyload" alt="" />
         </div>
 
         <form
