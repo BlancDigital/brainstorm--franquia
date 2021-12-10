@@ -220,8 +220,8 @@ section {
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
-ul[role="list"],
-ol[role="list"] {
+ul[role=list],
+ol[role=list] {
   list-style: none;
 }
 
@@ -240,7 +240,7 @@ body {
 /* A elements that don't have a class get default styles */
 a:not([class]) {
   -webkit-text-decoration-skip: ink;
-  text-decoration-skip-ink: auto;
+          text-decoration-skip-ink: auto;
 }
 
 /* Make images easier to work with */
@@ -265,13 +265,13 @@ select {
   }
 
   *,
-  *::before,
-  *::after {
+*::before,
+*::after {
     transition-duration: 0.01ms !important;
     -webkit-animation-duration: 0.01ms !important;
-    animation-duration: 0.01ms !important;
+            animation-duration: 0.01ms !important;
     -webkit-animation-iteration-count: 1 !important;
-    animation-iteration-count: 1 !important;
+            animation-iteration-count: 1 !important;
     scroll-behavior: auto !important;
   }
 }
@@ -279,7 +279,7 @@ select {
 @supports not ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
   body::before {
     -webkit-filter: blur(100px);
-    filter: blur(100px);
+            filter: blur(100px);
     opacity: 0.7;
   }
 
@@ -297,7 +297,7 @@ select {
     width: 100%;
     background: rgba(255, 255, 255, 0);
     -webkit-backdrop-filter: blur(100px);
-    backdrop-filter: blur(100px);
+            backdrop-filter: blur(100px);
   }
 }
 .section-center {
@@ -308,15 +308,12 @@ select {
 
 .clr-main {
   color: #14fbff;
-  text-shadow: -0.1rem -0.1rem 0.5rem var(--clr-main),
-    0.1rem 0.1rem 2rem var(--clr-main), 0 0 1rem var(--clr-main);
+  text-shadow: -0.1rem -0.1rem 0.5rem var(--clr-main), 0.1rem 0.1rem 2rem var(--clr-main), 0 0 1rem var(--clr-main);
 }
 
 .clr-accent {
   color: #a24ec6;
-  text-shadow: -0.2rem -0.2rem 1rem var(--clr-accent),
-    0.2rem 0.2rem 1rem var(--clr-accent), 0 0 2rem var(--clr-accent),
-    0 0 4rem var(--clr-accent);
+  text-shadow: -0.2rem -0.2rem 1rem var(--clr-accent), 0.2rem 0.2rem 1rem var(--clr-accent), 0 0 2rem var(--clr-accent), 0 0 4rem var(--clr-accent);
 }
 
 @media screen and (min-width: 75rem) {
@@ -332,8 +329,7 @@ select {
   width: 100%;
   max-width: 25rem;
   padding: 0.325em 0.6em;
-  padding: clamp(0.15625rem, 0.0953rem + 0.3049vw, 0.3125rem)
-    clamp(0.3rem, 0.1829rem + 0.5854vw, 0.6rem);
+  padding: clamp(0.15625rem, 0.0953rem + 0.3049vw, 0.3125rem) clamp(0.3rem, 0.1829rem + 0.5854vw, 0.6rem);
   padding: 0.05em 0.1em;
   font-family: var(--ff-title);
   font-size: 1.25rem;
@@ -351,12 +347,12 @@ select {
   transition: filter 250ms ease-in;
   transition: filter 250ms ease-in, -webkit-filter 250ms ease-in;
   -webkit-animation: pulse-yellow 1.5s infinite;
-  animation: pulse-yellow 1.5s infinite;
+          animation: pulse-yellow 1.5s infinite;
 }
 
 .btn:hover {
   -webkit-filter: saturate(2) drop-shadow(0px 0px 3rem rgba(96, 39, 121, 0.5));
-  filter: saturate(2) drop-shadow(0px 0px 3rem rgba(96, 39, 121, 0.5));
+          filter: saturate(2) drop-shadow(0px 0px 3rem rgba(96, 39, 121, 0.5));
 }
 
 .btn:focus-visible {
@@ -414,6 +410,9 @@ select {
   flex-direction: column;
   justify-content: space-between;
   gap: 2.63rem;
+}
+.item-list > div {
+  max-width: 50%;
 }
 .item-list .item-list__item-wrapper {
   display: grid;
@@ -495,7 +494,7 @@ select {
   display: none;
   width: 50%;
   height: 90%;
-  background-color: var(--clr-accent);
+  background-color: var(--clr-black);
 }
 
 .modal__image-wrapper img {
@@ -536,8 +535,7 @@ select {
   padding: 0;
   font-size: var(--fs-400);
   color: var(--clr-white);
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 0.25em 0.375em -0.0625em,
-    rgba(0, 0, 0, 0.06) 0px 0.125rem 0.25em -0.0625em;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0.25em 0.375em -0.0625em, rgba(0, 0, 0, 0.06) 0px 0.125rem 0.25em -0.0625em;
   -webkit-animation: none;
   animation: none;
 }
@@ -633,7 +631,9 @@ select,
 
 @media screen and (min-width: 56.25rem) {
   .modal__image-wrapper {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .form .wrapper {
@@ -770,9 +770,9 @@ select,
   display: none;
   width: 33.3%;
   -webkit-filter: drop-shadow(0px 0px 1.875rem rgba(96, 39, 121, 0.5));
-  filter: drop-shadow(0px 0px 1.875rem rgba(96, 39, 121, 0.5));
+          filter: drop-shadow(0px 0px 1.875rem rgba(96, 39, 121, 0.5));
   -webkit-animation: drop-shadow-glow 2.5s ease infinite;
-  animation: drop-shadow-glow 2.5s ease infinite;
+          animation: drop-shadow-glow 2.5s ease infinite;
   transform-style: preserve-3d;
   transform: perspective(1000px);
 }
@@ -820,12 +820,12 @@ select,
 }
 .section-for-you .left li::before {
   -webkit-filter: drop-shadow(0px 0px 3.5rem var(--clr-main-200)) saturate(3);
-  filter: drop-shadow(0px 0px 3.5rem var(--clr-main-200)) saturate(3);
+          filter: drop-shadow(0px 0px 3.5rem var(--clr-main-200)) saturate(3);
   background-image: url(./public/images/icon-check.svg);
 }
 .section-for-you .right li::before {
   -webkit-filter: drop-shadow(0px 0px 3.5rem var(--clr-accent-200)) saturate(3);
-  filter: drop-shadow(0px 0px 3.5rem var(--clr-accent-200)) saturate(3);
+          filter: drop-shadow(0px 0px 3.5rem var(--clr-accent-200)) saturate(3);
 }
 
 .section-testimonial .splide__list {
@@ -845,8 +845,7 @@ select,
 .section-testimonial .splide__pagination__page.splide__pagination__page {
   background-color: var(--clr-main);
 }
-.section-testimonial
-  .splide__pagination__page.is-active.splide__pagination__page.is-active {
+.section-testimonial .splide__pagination__page.is-active.splide__pagination__page.is-active {
   background-color: var(--clr-main-200);
 }
 .section-testimonial .testimonials__slide__text {
@@ -930,33 +929,31 @@ footer p {
 @-webkit-keyframes drop-shadow-glow {
   0% {
     -webkit-filter: drop-shadow(0px 0px 3.5rem rgba(96, 39, 121, 0.55));
-    filter: drop-shadow(0px 0px 3.5rem rgba(96, 39, 121, 0.55));
+            filter: drop-shadow(0px 0px 3.5rem rgba(96, 39, 121, 0.55));
   }
   50% {
     -webkit-filter: drop-shadow(0px 0px 6px rgba(96, 39, 121, 0.15));
-    filter: drop-shadow(0px 0px 6px rgba(96, 39, 121, 0.15));
+            filter: drop-shadow(0px 0px 6px rgba(96, 39, 121, 0.15));
   }
   100% {
     -webkit-filter: drop-shadow(0px 0px 3.5rem rgba(96, 39, 121, 0.5));
-    filter: drop-shadow(0px 0px 3.5rem rgba(96, 39, 121, 0.5));
+            filter: drop-shadow(0px 0px 3.5rem rgba(96, 39, 121, 0.5));
   }
 }
 @keyframes drop-shadow-glow {
   0% {
     -webkit-filter: drop-shadow(0px 0px 3.5rem rgba(96, 39, 121, 0.55));
-    filter: drop-shadow(0px 0px 3.5rem rgba(96, 39, 121, 0.55));
+            filter: drop-shadow(0px 0px 3.5rem rgba(96, 39, 121, 0.55));
   }
   50% {
     -webkit-filter: drop-shadow(0px 0px 6px rgba(96, 39, 121, 0.15));
-    filter: drop-shadow(0px 0px 6px rgba(96, 39, 121, 0.15));
+            filter: drop-shadow(0px 0px 6px rgba(96, 39, 121, 0.15));
   }
   100% {
     -webkit-filter: drop-shadow(0px 0px 3.5rem rgba(96, 39, 121, 0.5));
-    filter: drop-shadow(0px 0px 3.5rem rgba(96, 39, 121, 0.5));
+            filter: drop-shadow(0px 0px 3.5rem rgba(96, 39, 121, 0.5));
   }
 }
 .is-hidden {
   display: none;
 }
-
-/*# sourceMappingURL=to.css.map */
