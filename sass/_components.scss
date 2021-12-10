@@ -94,6 +94,10 @@
   justify-content: space-between;
   gap: 2.63rem;
 
+  > div {
+    max-width: 50%;
+  }
+
   .item-list__item-wrapper {
     display: grid;
     grid-template-rows: repeat(4, 1fr);
@@ -178,7 +182,7 @@
   display: none;
   width: 50%;
   height: 90%;
-  background-color: var(--clr-accent);
+  background-color: var(--clr-black);
 }
 
 .modal__image-wrapper img {
@@ -315,7 +319,9 @@ select,
 
 @media screen and (min-width: 56.25rem) {
   .modal__image-wrapper {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .form .wrapper {
