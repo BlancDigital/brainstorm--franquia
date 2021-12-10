@@ -203,11 +203,14 @@
                       Wise Up).
                     </li>
                     <li>Bacharel em Direto pela Unib.</li>
+                    <li>Militar da Academia da Força Aérea</li>
                   </ul>
-                  <div class="list-wrapper">
+                  <ul class="list-wrapper">
                     <li>Curso de Finanças pela FGV.</li>
                     <li>Formado em Coach e Mentor pela Instituto Holos.</li>
-                  </div>
+                    <li>Fundador da Startup Hoswapp</li>
+                  </ul>
+                  
                 </div>
               </div>
             </div>
