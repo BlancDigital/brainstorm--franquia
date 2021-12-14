@@ -94,9 +94,6 @@
   justify-content: space-between;
   gap: 2.63rem;
 
-  > div {
-    max-width: 50%;
-  }
 
   .item-list__item-wrapper {
     display: grid;
@@ -137,6 +134,10 @@
 
   .item-list {
     flex-direction: row;
+
+    > div {
+      max-width: 50%;
+    }
   }
 }
 
