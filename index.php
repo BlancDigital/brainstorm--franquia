@@ -10,6 +10,20 @@
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
+    <!-- Google Tag Manager -->
+    <script>
+      ;(function (w, d, s, l, i) {
+        w[l] = w[l] || []
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" })
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : ""
+        j.async = true
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl
+        f.parentNode.insertBefore(j, f)
+      })(window, document, "script", "dataLayer", "GTM-WF3G8C4")
+    </script>
+    <!-- End Google Tag Manager -->
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -20,9 +34,18 @@
     <meta property="og:title" content="Brainstorm - Escola de Negócios" />
 
     <!-- description -->
-    <meta name="description" content="Você busca ter uma carreira de sucesso? Ser um bom empresário? A Primeira EScola de Negócios pode te ajudar com isso." />
-    <meta property="og:description" content="Você busca ter uma carreira de sucesso? Ser um bom empresário? A Primeira EScola de Negócios pode te ajudar com isso." />
-    <meta name="twitter:description" content="Você busca ter uma carreira de sucesso? Ser um bom empresário? A Primeira EScola de Negócios pode te ajudar com isso." />
+    <meta
+      name="description"
+      content="Você busca ter uma carreira de sucesso? Ser um bom empresário? A Primeira EScola de Negócios pode te ajudar com isso."
+    />
+    <meta
+      property="og:description"
+      content="Você busca ter uma carreira de sucesso? Ser um bom empresário? A Primeira EScola de Negócios pode te ajudar com isso."
+    />
+    <meta
+      name="twitter:description"
+      content="Você busca ter uma carreira de sucesso? Ser um bom empresário? A Primeira EScola de Negócios pode te ajudar com isso."
+    />
 
     <!-- misc -->
     <meta property="og:locale" content="pt_BR" />
@@ -71,6 +94,16 @@
     <title>Brainstorm - Escola de Negócios</title>
   </head>
   <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-WF3G8C4"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
     <div class="exit-form__trigger" id="exitFormTrigger"></div>
     <div class="exit-form__trigger-activator" id="exitFormTriggerActivator"></div>
     <main>
@@ -210,7 +243,6 @@
                     <li>Formado em Coach e Mentor pela Instituto Holos.</li>
                     <li>Fundador da Startup Hoswapp</li>
                   </ul>
-                  
                 </div>
               </div>
             </div>
@@ -295,30 +327,21 @@
                 <p class="title">Se você deseja:</p>
                 <ul class="item-list__item-wrapper">
                   <li>Ser uma pessoa de sucesso.</li>
-                  <li>
-                    Aprender uma metodológia ágil que entrega resultados.
-                  </li>
+                  <li>Aprender uma metodológia ágil que entrega resultados.</li>
                   <li>Aprender inteligência emocional.</li>
                   <li>Ter vontade de mudar para uma vida melhor.</li>
                 </ul>
               </div>
               <div class="right">
-                <p class="title">Se você NÃO deseja:
-
-</p>
+                <p class="title">Se você NÃO deseja:</p>
                 <ul class="item-list__item-wrapper">
                   <li>Querer ser uma pessoa de sucesso.</li>
-                  <li>
-                    Aprender uma metodologia que ve ajudar no
-                    sucesso.
-                  </li>
+                  <li>Aprender uma metodologia que ve ajudar no sucesso.</li>
                   <li>
                     Querer aprender a ter inteligência emocional para lidar com
                     situações dificeis.
                   </li>
-                  <li>
-                    Ter o conhecimento para mudar de vida.
-                  </li>
+                  <li>Ter o conhecimento para mudar de vida.</li>
                 </ul>
               </div>
             </div>
@@ -404,7 +427,11 @@
 
       <div class="modal modal--main-form is-hidden" id="modal">
         <div class="modal__image-wrapper">
-          <img data-src="./public/images/logo-branco--no-copy.svg" class="lazyload" alt="" />
+          <img
+            data-src="./public/images/logo-branco--no-copy.svg"
+            class="lazyload"
+            alt=""
+          />
         </div>
 
         <form
@@ -490,7 +517,11 @@
       <!-- EXIT FORM -->
       <div class="modal modal--exit-form is-hidden" id="modal">
         <div class="modal__image-wrapper">
-          <img data-src="./public/images/logo-branco--no-copy.svg" class="lazyload" alt="" />
+          <img
+            data-src="./public/images/logo-branco--no-copy.svg"
+            class="lazyload"
+            alt=""
+          />
         </div>
 
         <form
